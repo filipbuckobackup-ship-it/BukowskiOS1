@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BukowskiOS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="desktop wallpaper-barroom" id="desktop">
+
+  <!-- Desktop icons get built from the APPS list in script.js,
+       so there's one place to add a new app instead of two. -->
+  <div class="desktop-icons" id="desktopIcons"></div>
+
+  <div class="windows-layer" id="windowsLayer"></div>
+
+  <div class="start-menu" id="startMenu" hidden>
+    <div class="start-menu-header">BukowskiOS</div>
+    <div class="start-menu-list" id="startMenuList"></div>
+  </div>
+
+  <div class="taskbar">
+    <button class="start-btn" id="startBtn" type="button" aria-haspopup="true" aria-expanded="false">
+      <span class="start-btn-mark">B</span> BukowskiOS
+    </button>
+    <div class="taskbar-windows" id="taskbarWindows"></div>
+    <div class="taskbar-clock" id="clock" aria-live="off"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
